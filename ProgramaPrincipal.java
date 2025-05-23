@@ -1,4 +1,3 @@
-
 public class ProgramaPrincipal {
     public static void main(String[] args) {
 
@@ -19,12 +18,19 @@ public class ProgramaPrincipal {
 
         ArvoreBinaria arvore = new ArvoreBinaria();
 
-
-        int totalNos = arvore.CountNos(A);
+        // Contagem dos nós
         System.out.println("Total de nós na árvore: " + totalNos);
 
-        // Exibindo pré-ordem
+        //Pré-ordem
         System.out.print("Pré-ordem: ");
         arvore.preOrdem(A);
+
+        //Em nivel
+        System.out.print("\nEm nível: ");
+        arvore.emNivel(A);
+
+        //Pós-ordem
+        System.out.print("\nPós-ordem: ");
+        arvore.posOrdem(A);
     }
 }

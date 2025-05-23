@@ -1,4 +1,3 @@
-
 public class No {
     String valor;
     No esquerda;
