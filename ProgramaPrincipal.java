@@ -1,6 +1,6 @@
 public class ProgramaPrincipal {
     public static void main(String[] args) {
-
+        // Criando os nós
         No A = new No("A");
         No B = new No("B");
         No C = new No("C");
@@ -18,19 +18,19 @@ public class ProgramaPrincipal {
 
         ArvoreBinaria arvore = new ArvoreBinaria();
 
-        // Contagem dos nós
-        System.out.println("Total de nós na árvore: " + totalNos);
 
-        //Pré-ordem
+        System.out.println("Total de nós na árvore: " + arvore.CountNos(A));
+
         System.out.print("Pré-ordem: ");
         arvore.preOrdem(A);
 
-        //Em nivel
         System.out.print("\nEm nível: ");
         arvore.emNivel(A);
 
-        //Pós-ordem
         System.out.print("\nPós-ordem: ");
         arvore.posOrdem(A);
+
+
+        System.out.println("\nNós folha: " + arvore.contarNosFolha(A));
     }
 }
