@@ -1,13 +1,19 @@
 public class No {
-    String valor;
-    No esquerda;
-    No direita;
+    int valor;
+    No esquerda, direita, pai;
+
+
     int altura;
 
-    public No(String valor) {
+
+    boolean cor;
+
+    public static final boolean VERMELHO = true;
+    public static final boolean PRETO = false;
+
+    public No(int valor) {
         this.valor = valor;
-        this.esquerda = null;
-        this.direita = null;
         this.altura = 1;
+        this.cor = VERMELHO;
     }
 }
